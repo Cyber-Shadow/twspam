@@ -55,11 +55,21 @@ def start6():
     for x in list(r):
         typewrite(x)
         typewrite(['enter'])
-        
+
+def start7():
+    r = raw_input("Enter sentence: ").lower()
+    r = r.strip(',.')
+    sleep(3)
+    for x in list(r):
+        if x == " ":
+            typewrite("    ")
+        else:
+            typewrite(":regional_indicator_"+ x + ": " )
+    typewrite(['enter'])
         
  
 def main():
-    print "1. Spam \n2. Unique Spam \n3. Countdown \n4. Klat mas \n5. Weeb \n6. Vertical Text"
+    print "1. Spam \n2. Unique Spam \n3. Countdown \n4. Klat mas \n5. Weeb \n6. Vertical Text \n7. Discord - Large Text"
     input1 = input("Selection: ")
     if input1 == 1:
         start1()
@@ -73,10 +83,10 @@ def main():
         start5()
     elif input1 == 6:
         start6()
+    elif input1 == 7:
+        start7()
+        
 
     
     main()
-main()
-
-
-               
+main()    
