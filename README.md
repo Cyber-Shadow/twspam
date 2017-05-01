@@ -1,6 +1,6 @@
 #TWSpam
 
-Current feautures:
+Current features:
 - Spam
 - Number Spam
 - Countdown
